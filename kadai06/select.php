@@ -20,7 +20,7 @@ if($status==false){
   //Selectデータの数だけ自動でループしてくれる $resultの中に「カラム名」が入ってくるのでそれを表示させる
   while( $result = $stmt->fetch(PDO::FETCH_ASSOC)){
     $view .= "<p>";
-    $view .= $result["id"]." ".$result["name"]." ".$result["kana"]." ".$result["reason"]." ".$result["email"]." ".$result["detail"];
+    $view .= $result["id"]." ".$result["name"]." ".$result["kana"]." ".$result["reason"]." ".$result["email"]." ".$result["detail"]." ".$result["kind"];
     $view .= "</p>";
   }
 
