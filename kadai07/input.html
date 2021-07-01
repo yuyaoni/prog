@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style07.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="https://kit.fontawesome.com/45469b2b14.js" crossorigin="anonymous"></script>
+    <title>Insert</title>
+</head>
+<body>
+    <!-- サイドバー -->
+    <div id="sidebar">
+        <ul class="side-ul">
+            <li>
+            <a href="chart.php" class="side-icon"><i class="fas fa-chart-line"></i></a>
+            </li>
+            <li>
+            <a href="input.html" class="side-icon"><i class="fas fa-edit"></i></a>
+            </li>
+            <li>
+            <a href="select.php" class="side-icon"><i class="fas fa-database"></i></a>
+            </li>
+            <li>
+            <a href="" class="side-icon"><i class="fas fa-cog"></i></a>
+            </li>
+            <li>
+            <a href="" class="side-icon sign-out-icon"><i class="fas fa-sign-out-alt"></i></a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- ここからinsert.phpにデータを送ります -->
+    <form method="post" action="insert.php">
+        <div class="input">
+            <fieldset class="input">
+                <legend class="title">新規登録</legend>
+                <label>日付：<input type="date" name="date"></label><br>
+                <label>体重：<input type="text" name="weight"> kg</label><br>
+                <label>距離：<input type="text" name="kyori"> km</label><br>
+                <label>食事：</br><textArea name="syokuji" rows="4" cols="40"></textArea></label><br>
+                <input type="submit" value="登録">
+            </fieldset>
+        </div>
+    </form>
+    <!-- Main[End] -->
+</body>
+</html>
